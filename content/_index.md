@@ -1,6 +1,7 @@
 ---
 hero:
-  heading: Novela, the simplest way to start publishing with Hugo and Forestry.
+  heading: No one could have told me in high school that I would end up wanting
+            to build robots in my future.
   maxWidthPX: 652
 seo:
   image: /images/hero-2.jpg
