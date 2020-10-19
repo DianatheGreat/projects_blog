@@ -1,6 +1,6 @@
-baseURL: "https://example.com"
+baseURL: "https://roboticsbydiana.com"
 languageCode: "en-us"
-title: "Hugo Novela"
+title: "Robotics by Diana"
 pygmentsstyle: 'monokai'
 
 # Theme settings
@@ -17,4 +17,4 @@ social:
   dribbble: "#"
   youtube: "#"
 taxonomies:
-  author: authors
+  author: Diana Simpson
