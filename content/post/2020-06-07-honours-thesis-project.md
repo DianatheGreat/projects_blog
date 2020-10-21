@@ -1,28 +1,29 @@
 ---
-title: A story of why Forestry loves Hugo
+title: Dehumidification for an Air Quality Monitoring Station
 date: 2020-04-27
-hero: "/images/hero-3.jpg"
-excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel
-  apps in the U.S, along with Uber, Lyft.
+hero: "/images/KOALAonfence_cropped.jpg"
+excerpt: Summary of a year long research project pursuing a low-power, low-const
+  dehumidification option to prove dehumidification concept for low-cost
+  particulate matter sensors.
 timeToRead: 8
 authors:
-- Dennis Brotzky
+- Diana Simpson
 
 ---
-To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide. We call this team Narative.
+The KOALA air quality monitoring stations were developed by Dr. Lidia Morawska with assistance from Dr. Matthew Dunbabin and others (ILAQH, n.d.). The reason a dehumidification unit was being investigated for the KOALA units was due to the inclusion of a low-cost particulate matter sensor. It is the Plantower PMS 1003, which can measure particles from 0.3$\mu$m up to 10$\mu$m. It has been noted in some studies that these sensors experience a non-linear inflation in readings with respect to humidity $>75%$.
 
-Narative is a studio based in 3 different cities around the world; so right off the bat we’re already facing a challenge; geography.
+## The Project
 
-![](/images/hero-2.jpg)
+### Initial Research
 
-We came across Figma a few weeks before engaging in our first project. It’s worth noting that, I’ve been using Sketch for several years before Narative, and getting out of your comfort zone can be scary.
-
-Just thinking about re-learning a new tool, transferring past designs, plugins and projects I’ve been working on for years, started to give me anxiety.
-Luckily, the transition was more than natural. Working on Figma was second-nature and, two weeks in, it became my daily driver. In three weeks, I became a fan, and today I am probably an advocate. Here are eight reasons why.
-
-## Easy migration
-
-Not much to say here. You literally just have to copy your art-boards — or as they call it, frames — then paste them into Figma. Simple as that. The platform is very forgiving and prepared for transitions.
+Multiple passive and active dehumidification options were investigated as potential candidates for testing:
+- various forms of desiccant
+- thermoelectric modules (TEM)
+- fans
+- air conditioning
+- magnetic air conditioning
+- fire
+- ice water coils
 
 ## Zero file management
 
