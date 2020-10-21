@@ -4,5 +4,5 @@ hero:
             to build robots in my future.
   maxWidthPX: 652
 seo:
-  image: /images/hero-2.jpg
+  image: /images/modifiedSoccerRobot.jpeg
 ---
