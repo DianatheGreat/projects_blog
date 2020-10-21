@@ -2,7 +2,6 @@ baseURL: "https://roboticsbydiana.com"
 languageCode: "en-us"
 title: "Robotics by Diana"
 pygmentsstyle: 'monokai'
-sectionPagesMenu: "main"
 
 # Theme settings
 # theme: novela
