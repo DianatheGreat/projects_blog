@@ -24,6 +24,7 @@ Multiple passive and active dehumidification options were investigated as potent
 - magnetic air conditioning
 - fire
 - ice water coils
+
 It was determined that the most viable option to test was the TEM. Looking at the power specifications for various modules, a Marlow RC3-4-01 single-stage thermoelectric module with a $\delta \text{T}_{max}$ of $70^{\circ}$C, a $\text{V}_{max}$ of 4.1Vm an $\text{I}_{max}$ of 3.7A, and a $\text{Q}_{max}$ of 10.3W.
 
 ### Designing the experiment
