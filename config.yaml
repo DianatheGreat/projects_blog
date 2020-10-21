@@ -1,13 +1,11 @@
-baseURL: "https://roboticsbydiana.com"
-languageCode: "en-us"
-title: "Robotics by Diana"
-pygmentsstyle: 'monokai'
-
-# Theme settings
-# theme: novela
+---
+baseURL: https://roboticsbydiana.com
+languageCode: en-us
+title: Robotics by Diana
+pygmentsstyle: monokai
 module:
   imports:
-    - path: "github.com/forestryio/hugo-theme-novela"
+  - path: github.com/forestryio/hugo-theme-novela
 paginate: 6
 social:
   twitter: "#"
