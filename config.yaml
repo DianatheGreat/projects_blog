@@ -2,6 +2,15 @@ baseURL: "https://roboticsbydiana.com"
 languageCode: "en-us"
 title: "Robotics by Diana"
 pygmentsstyle: 'monokai'
+menu:
+    main:
+    - identifier: about
+      name: About
+      pre: <i class='fa fa-heart'></i>
+      url: /about/
+      weight: -110
+    - name: Bios
+      url: /authors/
 
 # Theme settings
 # theme: novela

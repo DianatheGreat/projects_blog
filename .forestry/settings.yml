@@ -1,8 +1,8 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: "/Users/dianasimpson/Documents/GitHub/projects_blog"
-webhook_url: 
+admin_path: ""
+webhook_url:
 sections:
 - type: heading
   label: Content
