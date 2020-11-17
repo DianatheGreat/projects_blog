@@ -1,8 +1,20 @@
----
-baseURL: https://roboticsbydiana.com
-languageCode: en-us
-title: Robotics by Diana
-pygmentsstyle: monokai
+baseURL: "https://roboticsbydiana.com"
+languageCode: "en-us"
+title: "Robotics by Diana"
+pygmentsstyle: 'monokai'
+menu:
+    main:
+    - identifier: about
+      name: About
+      pre: <i class='fa fa-heart'></i>
+      url: /about/
+      weight: -110
+    - name: Bios
+      url: /authors/
+      weight: -120
+
+# Theme settings
+# theme: novela
 module:
   imports:
   - path: github.com/forestryio/hugo-theme-novela
