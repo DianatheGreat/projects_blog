@@ -1,7 +1,7 @@
 ---
 title: Getting Raspberry Pi loaded with Ubuntu & ROS
 date: 2020-10-24
-hero: /images/hero-2.jpg
+hero: /images/melodic.jpg
 excerpt: Taking my first swing at using a non-official OS on the Raspberry Pi for optimal functionality with ROS.
 timeToRead: 4
 authors:
