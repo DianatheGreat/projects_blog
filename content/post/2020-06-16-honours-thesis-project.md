@@ -2,6 +2,7 @@
 title: Dehumidification for an Air Quality Monitoring Station
 date: 2020-06-16
 hero: "/images/KOALAonfence.jpg"
+math: true
 excerpt: Summary of a year long research project pursuing a low-power, low-const
   dehumidification option to prove dehumidification concept for low-cost
   particulate matter sensors.
