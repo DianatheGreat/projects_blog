@@ -1,24 +1,19 @@
 ---
-title: How Figma changed the way we design at Narative
-date: 2017-04-30
+title: ROS Tutorials
+date: 2020-11-19
 hero: /images/hero-5.jpg
-excerpt: To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer.
+excerpt: Learning about and how to use ROS is a definite advantage for a roboticist, so it is pretty surprising that as an engineering student majoring in mechatronics with a minor in robotics I have not been exposed to ROS in any direct way.
 timeToRead: 8
 authors:
-  - Thiago Costa
+  - Diana Simpson
 
 ---
 
-To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide. We call this team Narative.
+I decided that the easiest, and probably most expeditious, way to learn about ROS is through their own tutorials. I guess this will be a bit of a crash course for me on their tutorials and ROS itself. There are dozens of [tutorials](https://wiki.ros.org/ROS/Tutorials) available on the ROS site. I plan to give my own synopsis of how things go with each tutorial and my impression of its usefulness and efficacy.
 
-Narative is a studio based in 3 different cities around the world; so right off the bat we’re already facing a challenge; geography.
+## Beginner level
 
-We came across Figma a few weeks before engaging in our first project. It’s worth noting that, I’ve been using Sketch for several years before Narative, and getting out of your comfort zone can be scary.
-
-Just thinking about re-learning a new tool, transferring past designs, plugins and projects I’ve been working on for years, started to give me anxiety.
-Luckily, the transition was more than natural. Working on Figma was second-nature and, two weeks in, it became my daily driver. In three weeks, I became a fan, and today I am probably an advocate. Here are eight reasons why.
-
-## Easy migration
+### Tutorial 1: Installing and Configuring Your ROS Environment
 
 Not much to say here. You literally just have to copy your art-boards — or as they call it, frames — then paste them into Figma. Simple as that. The platform is very forgiving and prepared for transitions.
 
