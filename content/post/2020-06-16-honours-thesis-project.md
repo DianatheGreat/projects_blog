@@ -48,7 +48,7 @@ The initial research pointed towards the utilisation of ultracapacitors as a way
 
 Using the 0.020289Ah mean as an example:
 Since $Q_C = Q_{Ah} \times 3600$, $$Q_C = 0.020289Ah * 3600 = 73.0396C$$
-Also since, $1 \frac{C}{V} = 1F$: $$73.0396C \divide 9.1V = 8.0263F$$
+Also since, $1 \frac{C}{V} = 1F$: $$73.0396C \div 9.1V = 8.0263F$$
 
 It was calculated that obtaining a set of ultracapacitors with a total capcitance of 8.03F at 9.1V would generate the desired power level. Unfortunately, due to time and resource constraints, circuit design and additional testing with potential power solutions was required to be delegated to a separate project.
 
