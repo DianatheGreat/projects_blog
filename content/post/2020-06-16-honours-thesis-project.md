@@ -40,7 +40,7 @@ All experiments were executed using at least one Arduino Mega 2560, at least one
 
 ### Results
 
-The experimental outputs continually demonstrated that TEM was an effective unit to dehumidfy the air volume. But, the time and power required were the largest hurdles. With the final design, utilising minimal air volume, it was determined the humidity could be reduced at an optimal rate of -1.24$\frac{\percent}{s}$. With an ideal 20 second timeframe, this would allow for a 24.8% reduction in relative humidity being measured by the sensor. Which allows even an environment with 100% humidity to nearly reach the 75% threshold. This also allowed for the measurement and calculation of power used by the TEM and its accompanying fan. It was determined that a maximum of 0.0231Ah with 9.1V (using 4.1V for the TEM and 5V for the fan).
+The experimental outputs continually demonstrated that TEM was an effective unit to dehumidfy the air volume. But, the time and power required were the largest hurdles. With the final design, utilising minimal air volume, it was determined the humidity could be reduced at an optimal rate of -1.24$\frac{%}{s}$. With an ideal 20 second timeframe, this would allow for a 24.8% reduction in relative humidity being measured by the sensor. Which allows even an environment with 100% humidity to nearly reach the 75% threshold. This also allowed for the measurement and calculation of power used by the TEM and its accompanying fan. It was determined that a maximum of 0.0231Ah with 9.1V (using 4.1V for the TEM and 5V for the fan).
 
 ### Power Research
 
