@@ -15,23 +15,30 @@ I decided that the easiest, and probably most expeditious, way to learn about RO
 
 ### Tutorial 1: Installing and Configuring Your ROS Environment
 
-Not much to say here. You literally just have to copy your art-boards — or as they call it, frames — then paste them into Figma. Simple as that. The platform is very forgiving and prepared for transitions.
+Ran into a bit of an odd error with this tutorial. When I went to run the
+```
+catkin_make -PYTHON_EXECUTABLE=/usr/bin/python3
+```
+command, I received an error that I was missing the catkin_pkg and to make sure it was installed. So, I did some searching and digging around and finally stumbled onto [Q&A](https://answers.ros.org/question/337135/catkin_make-no-module-named-catkin_pkg/) on the ROS site that explained why I was having the issue (because the default python package is 2.7 and that is the version of catkin_pkg that is installed) and gave suitable solution: _sudo apt install python3-catkin-pkg_.
 
-## Zero file management
+I ran this command, and it then removed the majority of the ROS packages that I had just installed ... **_Whoa! huh? What just happened?_** I checked with a colleague that is more familiar with ROS (uses it on a daily basis) and was informed that doing the install should not have touched my ROS packages at all. So, I just tried to do a quick bandaid with a repeat of
+```
+sudo apt install ros-melodic-desktop
+```
 
-What does that mean? Sketch, Framer, Adobe XD or even Photoshop are native apps where you inherently need to save your work. Some tools have auto-save, of course, but you still end up with hundreds of megabytes and even gigabytes on your drive. And yes, if you lose your disk, break your computer somehow, or have your dog eat your SSD, you will lose your files completely.
+This seems to have worked. I was then able to run the catkin_make command and finish the tutorial.
 
-Not with Figma. Not having to command+s is a big deal. Figma is a web-based software, meaning you never need to upload, download, or worry about versions again. Imagine a Google Docs for design, keeping all my projects organized in one app, in the cloud. One single source of truth for design files.
+### Tutorial 2: Navigating the ROS Filesystem
 
-I probably saved more than 30GB of disk space by migrating my projects to Figma, and now I can access them from anywhere.
+I attempted to install the tutorial packages, but basically was informed that nothing needed to be installed.
 
-## Figma is platform-agnostic
+This was pretty plain and straight-forward with the alterations of commands to find or cd straight to a specific ROS package. It is nice to have short cuts like that. It also showed the power of utilising tab with under-completed file names, but that is a pretty common trick for anyone that regularly does programming.
 
-One of the best features of a web-based software is the fact you’re no longer stuck with an operating system. You can run it right from the browser or from their native app, that’s essentially a wrapper. I’m able to seamlessly start a project on my iMac Pro at my home office, and continue on my Surface Book 2 on the go. That’s huge.
+### Tutorial 3: Creating a ROS Package
 
-Additionally, you’ll always have the latest version, with no need to download painful software updates. The “cloud” is finally making sense in 2018.
+Just another tutorial with a lot of explanation and a good walk-through of generating a new ROS package. I have also started working on adopting VIM as my command line file editor, because it seems to have a lot of really good functionality. It can be a little tricky to learn at first - especially if you have never worked with command line file editors before. It has definitely grown on me over the past couple of years though.
 
-## Performance
+### Tutorial 4: Building a ROS Package
 
 You may be thinking that running a full-fledged design app from the web has huge performance drawbacks. I thought the same, but was I ever wrong.
 
