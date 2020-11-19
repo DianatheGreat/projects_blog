@@ -15,18 +15,11 @@ I decided that the easiest, and probably most expeditious, way to learn about RO
 
 ### Tutorial 1: Installing and Configuring Your ROS Environment
 
-Ran into a bit of an odd error with this tutorial. When I went to run the
-```
-catkin_make -PYTHON_EXECUTABLE=/usr/bin/python3
-```
-command, I received an error that I was missing the catkin_pkg and to make sure it was installed. So, I did some searching and digging around and finally stumbled onto [Q&A](https://answers.ros.org/question/337135/catkin_make-no-module-named-catkin_pkg/) on the ROS site that explained why I was having the issue (because the default python package is 2.7 and that is the version of catkin_pkg that is installed) and gave suitable solution: _sudo apt install python3-catkin-pkg_.
+Ran into a bit of an odd error with this tutorial. When I went to run the `catkin_make -PYTHON_EXECUTABLE=/usr/bin/python3` command, I received an error that I was missing the `catkin_pkg` and to make sure it was installed. So, I did some searching and digging around and finally stumbled onto [Q&A](https://answers.ros.org/question/337135/catkin_make-no-module-named-catkin_pkg/) on the ROS site that explained why I was having the issue (because the default python package for ROS is 2.7 and that is the version of `catkin_pkg` that is installed). It gave the logical solution to install the appropriate version of the catkin package: `sudo apt install python3-catkin-pkg`.
 
-I ran this command, and it then removed the majority of the ROS packages that I had just installed ... **_Whoa! huh? What just happened?_** I checked with a colleague that is more familiar with ROS (uses it on a daily basis) and was informed that doing the install should not have touched my ROS packages at all. So, I just tried to do a quick bandaid with a repeat of
-```
-sudo apt install ros-melodic-desktop
-```
+I ran this command, and it then removed the majority of the ROS packages that I had just installed ... **_Whoa! huh? What just happened?_** I checked with a colleague that is more familiar with ROS1 (uses it on a daily basis at work) and was informed that doing the catkin package install should not have touched my ROS packages at all. Well, that is a bit of a quandary there, because it did.
 
-This seems to have worked. I was then able to run the catkin_make command and finish the tutorial.
+So, I just tried to do a quick bandaid with a repeat of `sudo apt install ros-melodic-desktop` hoping it would just fix whatever just happened. It seems to have worked. I was then able to run the catkin_make command and finish the tutorial.
 
 ### Tutorial 2: Navigating the ROS Filesystem
 
@@ -40,40 +33,35 @@ Just another tutorial with a lot of explanation and a good walk-through of gener
 
 ### Tutorial 4: Building a ROS Package
 
-You may be thinking that running a full-fledged design app from the web has huge performance drawbacks. I thought the same, but was I ever wrong.
+This tutorial was super easy and quick. Just had to re-run the catkin_make command to have the directory created in the last tutorial added to the build folder.
 
-I’ve always had full-spec computers running Sketch, still, ever so often I’d run into performance hiccups or memory drainage. That’s never happened with Figma, which is pretty magical.
+### Tutorial 5: Understanding ROS Nodes
 
-I continually forget that I’m running a huge project in a “webpage”, and as soon as I remember, it always blows my mind because of how fast it is.
-Components and styles
-This is a feature that most product design tools have, but for some reason, it’s slightly more polished on Figma.
+Terms to remember:
+- **Nodes:** A node is an executable that uses ROS to communicate with other nodes. ROS nodes use a ROS client library to communicate with other nodes. Nodes can publish or subscribe to a Topic. Nodes can also provide or use a Service.
+- **Messages:** ROS data type used when subscribing or publishing to a topic.
+- **Topics:** Nodes can _publish_ messages to a topic as well as _subscribe_ to a topic to receive messages.
+- **Master:** Name service for ROS (i.e. helps nodes find each other)
+- **rosout:** ROS equivalent of stdout/stderr
+- **roscore:** Master + rosout + parameter server (parameter server will be introduced later)
 
-At Narative, as we constantly change projects, styles and teams, one of the best ways for us to keep in sync is by publishing components. Even in different projects, or “files”, we can load components and libraries from previous projects, allowing us to be extremely efficient and consistent.
+I ran into no issues with this tutorial. And I had fun using `rosrun` to run the turtlesim node over and over, because you get a different turtle every time!
 
-Building components such as buttons, modals, and form fields is awesome. Say you build 30 pages using one single library of components, and if you ever decide to update the style of a button from this library, for example, you simply update the master and, voilà — all 30 pages will have the brand new and updated button.
+It was also interesting to learn that using ctrl-C to close out a program will leave a residual program in the `rosnode list`, which needs to go through the cleanup process for the empty node to be purged. So, better to close the window to quit than to use ctrl-C.
 
-## Our engineers love it
+### Tutorial 6: Understanding ROS Topics
 
-From an engineering perspective, it’s extremely efficient having our projects centralized in one platform. In the past, every time I updated a project, I had to manually sync my designs through a plugin into a third-party “inspection” platform where engineers would have access to. Although this method works, it’s not ideal in a fast-paced project development.
+Well, that was a fun way to explain and demonstrate topics and messages. The `rqt_plot` node was having issues though. The window was either tiny with no graph visible at all or it had to be maximised. I attempted to make it slightly larger and it caused the entire thing to crash.
 
-With Figma, engineers see changes in real time, allowing them to participate in every step of the project, from wireframes to design.
+I ended up with a few terminal windows open, but it was a interesting activity. The visual connections shown with the `rqt_graph` node was nice. I also liked that it could be refreshed with the additional nodes and messages added - including all of the relationships.
 
-Design Programmatically is key for us, so our engineers can simultaneously work on developing components while us, designers, progress with the design creation and copywriters progress with content. We essentially have all of the tools we need to create dynamic, digital products in one place.
+### Tutorial 7: Understanding ROS Services and Parameters
 
-## Tabs!
+This is getting into some more heavy topics that will require more use to really get it into my brain. They break it down to simple explanations in the tutorial, but there is just a lot more going on in these areas than in the prior sections.
 
-One of my favourite features, and probably something I took for granted in the past is the ability to open projects in tabs.
+Services allow nodes to send requests and receive responses. And the services available will vary depending on the nodes running. I did enjoy spawning a second turtle into the `turtlesim` node.
 
-And damn. It's fast.
-And damn. It's fast.
-Like a browser, the Figma app allows you to have several tabs open so you can jump back and forth between pages rather than having multiple windows messing up your desktop. I probably increased my efficiency by 50% or more being able to have several projects open, without eating my RAM alive.
-
-## Power to our team
-
-Back to my initial point, collaboration is key for a company like Narative. Especially with a team overseas. Working on Figma, however, regardless of where you are in the world, it’s like working right next to each other.
-
-It’s tough to express just how efficient we’ve become, with everyone having access to one single file, at the same time.
-I design simultaneously with our copywriter, while our developer watches our progress, providing relevant comments. Again, it’s magical. Exporting images, SVGs, colors, and even CSS styles, is as simple as right-clicking and copying.
+Parameters are pretty straight forward as well. But, I was a little confused by the fact that 
 
 ## Conclusion
 
