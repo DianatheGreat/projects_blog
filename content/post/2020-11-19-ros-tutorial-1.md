@@ -61,80 +61,15 @@ This is getting into some more heavy topics that will require more use to really
 
 Services allow nodes to send requests and receive responses. And the services available will vary depending on the nodes running. I did enjoy spawning a second turtle into the `turtlesim` node.
 
-Parameters are pretty straight forward as well. But, I was a little confused by the fact that 
+Parameters are pretty straight forward as well. But, I was a little confused by the fact that the parameters showed a version of `turtlesim` that I had ended earlier, and completely closed the previous terminal window.
 
-## Conclusion
+### Tutorial 8: Using rqt_console and roslaunch
 
-Figma is not only a full-fledged design tool but the best I’ve used in years. It speaks volumes regarding just how much its creators considered the future.
+`rqt_console` is the built-in ROS debugging framework. It is fairly easy to get running and understand with the GUI console and explanations of logger levels. It is also slightly entertaining to get repetitive warnings when your turtle runs into a wall. The program seems very distressed.
 
-Witnessing forward-thinking products is not only refreshing but extremely inspirational to know there are teams working hard to support companies such as Narative to succeed. From drafting our first ideas to real prototypes, all while reducing the friction of turning visual concepts into code.
+`roslaunch` allows multiple nodes to be launched at the same time through a launch file. It is an easy walk-through from generating the launch file, to explaining what each part of the xml code is doing. It also pulls some of the debugging aspects of other `rqt` affiliates into the end as well.
 
-If you're still not sure, you should definitely try it out. It's free.
-
-```js
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import styled from "@emotion/styled";
-
-import * as SocialIcons from "../../icons/social";
-import mediaqueries from "@styles/media";
-
-const icons = {
-  dribbble: SocialIcons.DribbbleIcon,
-  linkedin: SocialIcons.LinkedinIcon,
-  twitter: SocialIcons.TwitterIcon,
-  facebook: SocialIcons.FacebookIcon,
-  instagram: SocialIcons.InstagramIcon,
-  github: SocialIcons.GithubIcon,
-};
-
-const socialQuery = graphql`
-  {
-    allSite {
-      edges {
-        node {
-          siteMetadata {
-            social {
-              name
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`;
-
-function SocialLinks({ fill = "#73737D" }: { fill: string }) {
-  const result = useStaticQuery(socialQuery);
-  const socialOptions = result.allSite.edges[0].node.siteMetadata.social;
-
-  return (
-    <>
-      {socialOptions.map(option => {
-        const Icon = icons[option.name];
-
-        return (
-          <SocialIconContainer
-            key={option.name}
-            target="_blank"
-            rel="noopener"
-            data-a11y="false"
-            aria-label={`Link to ${option.name}`}
-            href={option.url}
-          >
-            <Icon fill={fill} />
-          </SocialIconContainer>
-        );
-      })}
-    </>
-  );
-}
-```
-
-This is another paragraph after the code block.
-
-## This is a secondary heading
+### Tutorial 9: Using rosed to edit files in ROS
 
 ```jsx
 import React from "react";
