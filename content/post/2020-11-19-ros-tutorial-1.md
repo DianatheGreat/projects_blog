@@ -71,25 +71,9 @@ Parameters are pretty straight forward as well. But, I was a little confused by 
 
 ### Tutorial 9: Using rosed to edit files in ROS
 
-```jsx
-import React from "react";
-import { ThemeProvider } from "theme-ui";
-import theme from "./theme";
+This tutorial is short and sweet, and allows you to alter the default editor program used to edit files in ROS with the `rosed` command.
 
-export default props => (
-  <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
-);
-```
-
-At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
-
-In this article I’ll explain how Gatsby’s lifecycle works and what the Gatsby specific files are for.
-
-One of the challenges I had when learning Gatsby was trying to understand the Gatsby lifecycle. React introduced me to the concept of a Component Lifecycle, but when I started learning Gatsby I felt at a loss again. I remember looking through example repositories and seeing Gatsby specific files in every project and thinking to myself, “What are these files for? Why are gatsby-node.js, gatsby-browser.js, and gatsby-ssr.js generated in the default starter kit? Can I really delete these files?”
-
-In this article I’ll explain the how Gatsby’s lifecycle works and what the Gatsby specific files are for.
-
-## How does Gatsby work?
+### Tutorial 10: Creating a ROS msg and srv
 
 To understand what these files are for, we must first understand how Gatsby works. Gatsby is a static site generator that pulls data from sources you provide and generates a website/app for you.
 
