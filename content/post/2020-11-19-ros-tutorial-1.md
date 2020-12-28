@@ -4,6 +4,7 @@ date: 2020-11-19
 hero: /images/hero-5.jpg
 excerpt: Learning about and how to use ROS is a definite advantage for a roboticist, so it is pretty surprising that as an engineering student majoring in mechatronics with a minor in robotics I have not been exposed to ROS in any direct way.
 timeToRead: 8
+draft: true
 authors:
   - Diana Simpson
 
@@ -19,13 +20,17 @@ Ran into a bit of an odd error with this tutorial. When I went to run the `catki
 
 I ran this command, and it then removed the majority of the ROS packages that I had just installed ... **_Whoa! huh? What just happened?_** I checked with a colleague that is more familiar with ROS1 (uses it on a daily basis at work) and was informed that doing the catkin package install should not have touched my ROS packages at all. Well, that is a bit of a quandary there, because it did.
 
-So, I just tried to do a quick bandaid with a repeat of `sudo apt install ros-melodic-desktop` hoping it would just fix whatever just happened. It seems to have worked. I was then able to run the catkin_make command and finish the tutorial.
+So, I just tried to do a quick band-aid with a repeat of `sudo apt install ros-melodic-desktop` hoping it would just fix whatever just happened. It seems to have worked. I was then able to run the catkin_make command and finish the tutorial.
 
 ### Tutorial 2: Navigating the ROS Filesystem
 
 I attempted to install the tutorial packages, but basically was informed that nothing needed to be installed.
 
-This was pretty plain and straight-forward with the alterations of commands to find or cd straight to a specific ROS package. It is nice to have short cuts like that. It also showed the power of utilising tab with under-completed file names, but that is a pretty common trick for anyone that regularly does programming.
+This was pretty plain and straight-forward with the alterations of commands to find `rospack find [package_name]` or change directories `roscd` straight to a specific ROS package. It is nice to have short cuts like that. It also showed the power of utilising tab with under-completed file names, but that is a pretty common trick for anyone that regularly does programming.
+
+The `roscd log` was also an interesting tool, allowing you to see all of the log files that have been stored.
+
+The `rosls [location_name[/subdir]]` seems like it will also be a useful tool in the future. Being able to _remotely_ access the contents of a different folder within the ROS set up would make copying or relocating files much easier.
 
 ### Tutorial 3: Creating a ROS Package
 
@@ -75,9 +80,7 @@ This tutorial is short and sweet, and allows you to alter the default editor pro
 
 ### Tutorial 10: Creating a ROS msg and srv
 
-To understand what these files are for, we must first understand how Gatsby works. Gatsby is a static site generator that pulls data from sources you provide and generates a website/app for you.
-
-Gatsby requires Node to be installed to run the Bootstrap and Build sequences. Under the hood, Gatsby uses Webpack to build and start a development server amongst other things.
+This tutorial seems fairly straight-forward, as they all have really been. Although, I ran into a snag when it instructed me to copy a `.srv` file from another tutorial folder. Luckily,
 
 ### Step 1
 

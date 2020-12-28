@@ -1,15 +1,16 @@
 ---
-title: Why we built a company before building a product and why it worked
-date: 2017-04-30
-hero: /images/hero-6.jpg
-excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel apps in the U.S, along with Uber, Lyft.
-timeToRead: 3
+title: Install ROS take 2
+date: 2020-12-28
+hero: "/images/noetic.jpg"
+excerpt: Due to unforeseen issues with Melodic causing massive issues with a variety of packages - I have opted to start from scratch with the more updated ROS Noetic Ninjemys.
+timeToRead: 10
+draft: true
 authors:
-  - Thiago Costa
+  - Diana Simpson
 
 ---
 
-Hello, world! This is a demo post for `hugo-theme-novela`. Novela is built by the team at [Narative](https://narative.co), and built for everyone that loves the web.
+Well, as I was running through the ROS tutorials learning how it worked and where things went and how to use it ... I suddenly got hit upside the head with an odd python package missing. Well, it turns out that when I thought I had configured Melodic to utilise Python3, versus the default 2.7, it completely reversed all of that when I had to reinstall the desktop packages.
 
 In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
 In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
