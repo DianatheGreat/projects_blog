@@ -12,13 +12,11 @@ authors:
 
 Well, as I was running through the ROS tutorials learning how it worked and where things went and how to use it ... I suddenly got hit upside the head with an odd python package missing. Well, it turns out that when I thought I had configured Melodic to utilise Python3, versus the default 2.7, it completely reversed all of that when I had to reinstall the desktop packages.
 
-In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
-In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
-In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
+Went back to the Ubuntu Mate [website](https://ubuntu-mate.org/download/arm64/) to select the updated version that will support ROS Noetic. The first download I received ended up being corrupted, thank goodness for the checksum verification. Got the OS image flashed onto the Raspberry Pi's SD card, and loaded it into the Raspberry Pi. The initial setup ended up being conducted in the living room, since ssh is not going to be set up yet.
 
-In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
+I installed the ssh-server with `sudo apt-get install ssh-server` and set up as a service at boot with `sudo systemctl enable ssh`. So, that I don't have to worry about not being able to connect to the Pi each time. I restarted the Pi and ssh was still active when I checked, so the boot service worked.
 
-But it takes more than good ideas to build and grow a business. It takes people to bring them into reality. Are those people collaborating and sharing their expertise, or are they in conflict and keeping it to themselves?
+I followed the previous mentioned link regarding getting vnc installed and running on the Raspberry Pi. 
 
 Do they have the resources necessary to execute on their ideas? Or are they constantly under pressure to pluck only the lowest-hanging fruit through bare minimum means, while putting their greatest ambitions on the back-burner?
 
