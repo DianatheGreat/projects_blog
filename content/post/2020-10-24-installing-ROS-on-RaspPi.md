@@ -6,7 +6,7 @@ excerpt: Taking my first couple of swings at using a non-official OS on the Rasp
 timeToRead: 4
 authors:
   - Diana Simpson
-
+draft: true
 ---
 
 This initial project is to develop a line following robot utilising a home-made setup along with a Raspberry Pi for the brain and integrating ROS for extended functionality and gaining familiarity with the robotic operating system.
