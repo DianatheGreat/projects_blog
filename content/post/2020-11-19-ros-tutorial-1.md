@@ -1,6 +1,6 @@
 ---
 title: ROS Tutorials
-date: 2020-11-19
+date: 2021-01-29
 hero: /images/hero-5.jpg
 excerpt: Learning about and how to use ROS is a definite advantage for a roboticist, so it is pretty surprising that as an engineering student majoring in mechatronics with a minor in robotics I have not been exposed to ROS in any direct way.
 timeToRead: 8
@@ -10,11 +10,15 @@ authors:
 
 ---
 
-I decided that the easiest, and probably most expeditious, way to learn about ROS is through their own tutorials. I guess this will be a bit of a crash course for me on their tutorials and ROS itself. There are dozens of [tutorials](https://wiki.ros.org/ROS/Tutorials) available on the ROS site. I plan to give my own synopsis of how things go with each tutorial and my impression of its usefulness and efficacy.
+I decided that the easiest, and probably most expeditious, way to learn about ROS is through their own tutorials. I guess this will be a bit of a crash course for me on their tutorials and ROS itself. There are dozens of [tutorials](https://wiki.ros.org/ROS/Tutorials) available on the ROS site. I plan to give my own synopsis of how things go with each tutorial and my impression of its usefulness and efficacy. And, since I ran into an issue forcing me to alter the version of ROS on the Pi, I decided to restart the tutorials to make sure all of the same environments and factors are set up.
 
 ## Beginner level
 
 ### Tutorial 1: Installing and Configuring Your ROS Environment
+
+#### ROS Install
+
+This was already accomplished in my previous [blog post](https://www.roboticsbydiana.com/post/2020-12-28-install-ros-take-2/). 
 
 Ran into a bit of an odd error with this tutorial. When I went to run the `catkin_make -PYTHON_EXECUTABLE=/usr/bin/python3` command, I received an error that I was missing the `catkin_pkg` and to make sure it was installed. So, I did some searching and digging around and finally stumbled onto [Q&A](https://answers.ros.org/question/337135/catkin_make-no-module-named-catkin_pkg/) on the ROS site that explained why I was having the issue (because the default python package for ROS is 2.7 and that is the version of `catkin_pkg` that is installed). It gave the logical solution to install the appropriate version of the catkin package: `sudo apt install python3-catkin-pkg`.
 

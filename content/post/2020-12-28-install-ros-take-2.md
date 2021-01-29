@@ -11,7 +11,7 @@ authors:
 
 ## Take 2 ...
 
-Well, as I started running through the ROS tutorials to learn how it works, where things go, and how to use them ... I suddenly got hit upside the head with an odd python package missing error. After a bit of research and assistance from a friend familiar with ROS, we learned that when I thought I had configured Melodic to utilise Python3, versus the default 2.7, it had been completely reversed when I had to reinstall the desktop packages (after all of the previously installed ROS packages were mysteriously uninstalled). So, it was back to the drawing board, since there were no real solutions found that actually worked. And it seems that Noetic has fixed its problems with the arm64 version ... or so I am hoping.
+Well, as I started running through the ROS tutorials to learn how it works, where things go, and how to use them ... I suddenly got hit upside the head with an odd python package missing error. After a bit of research and assistance from a friend familiar with ROS, we learned that when I thought I had configured Melodic to utilise Python3, versus the default 2.7, it had been completely reversed when I had to reinstall the desktop packages (after all of the previously installed ROS packages were mysteriously uninstalled when I ran the `sudo apt install python3-catkin-pkg` in the original course through the first ROS tutorial). So, it was back to the drawing board, since there were no real solutions found that actually fixed this package error. And it seems that Noetic has fixed its problems with the arm64 version ... or so I am hoping.
 
 ### Installing Ubuntu Mate ... again
 
