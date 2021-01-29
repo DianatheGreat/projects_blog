@@ -1,8 +1,8 @@
 ---
-title: ROS Tutorials
-date: 2021-01-29
-hero: /images/hero-5.jpg
-excerpt: Learning about and how to use ROS is a definite advantage for a roboticist, so it is pretty surprising that as an engineering student majoring in mechatronics with a minor in robotics I have not been exposed to ROS in any direct way.
+title: ROS Tutorials 1 & 2
+date: 2021-02-01
+hero: /images/ROStuts1.jpg
+excerpt: Learning about and how to use ROS is a definite advantage for an aspiring roboticist, so it is pretty surprising that as an engineer graduate with a major in mechatronics and a minor in robotics I have barely been exposed to ROS - and even that was through verbal reference only.
 timeToRead: 8
 draft: true
 authors:
@@ -12,54 +12,49 @@ authors:
 
 I decided that the easiest, and probably most expeditious, way to learn about ROS is through their own tutorials. I guess this will be a bit of a crash course for me on their tutorials and ROS itself. There are dozens of [tutorials](https://wiki.ros.org/ROS/Tutorials) available on the ROS site. I plan to give my own synopsis of how things go with each tutorial and my impression of its usefulness and efficacy. And, since I ran into an issue forcing me to alter the version of ROS on the Pi, I decided to restart the tutorials to make sure all of the same environments and factors are set up.
 
-## Beginner level
+## Beginner level (cont.)
 
-### Tutorial 1: Installing and Configuring Your ROS Environment (*29-Jan*)
+### Tutorial 3: Creating a ROS Package (*01-Feb*)
 
-"_Description:_ This tutorial walks you through installing ROS and setting up the ROS environment on your computer."
+"__Description:__ This tutorial covers using roscreate-pkg or catkin to create a new package, and rospack to list package dependencies."
 
-<!-- Ran into a bit of an odd error with this tutorial. When I went to run the `catkin_make -PYTHON_EXECUTABLE=/usr/bin/python3` command, I received an error that I was missing the `catkin_pkg` and to make sure it was installed. So, I did some searching and digging around and finally stumbled onto [Q&A](https://answers.ros.org/question/337135/catkin_make-no-module-named-catkin_pkg/) on the ROS site that explained why I was having the issue (because the default python package for ROS is 2.7 and that is the version of `catkin_pkg` that is installed). It gave the logical solution to install the appropriate version of the catkin package: `sudo apt install python3-catkin-pkg`.
+#### 1. What makes up a catkin Package?
 
-I ran this command, and it then removed the majority of the ROS packages that I had just installed ... **_Whoa! huh? What just happened?_** I checked with a colleague that is more familiar with ROS1 (uses it on a daily basis at work) and was informed that doing the catkin package install should not have touched my ROS packages at all. Well, that is a bit of a quandary there, because it did.
 
-So, I just tried to do a quick band-aid with a repeat of `sudo apt install ros-melodic-desktop` hoping it would just fix whatever just happened. It seems to have worked. I was then able to run the catkin_make command and finish the tutorial. -->
 
-#### 1. ROS Install
+#### 2. Packages in a catkin Workspace
 
-This was already accomplished in my previous [blog post](https://www.roboticsbydiana.com/post/2020-12-28-install-ros-take-2/).
 
-#### 2. Managing Your environment
 
-Typed in the `printenv | grep ROS` command and it spit out all of the ROS details, so no additional sourcing required.
+#### 3. Creating a catkin Package
 
-#### 3. Create a ROS workspace
 
-This time when setting up the ROS workspace, there were no issues at all with running the `catkin_make` command. Everything went very smoothly, although I was not forced to impose Python3 onto the system either, since Noetic has been upgraded to Python3 completely.
 
-Sourcing the setup files was also easy and error-free.
+#### 4. Building a catkin workspace and sourcing the setup file
 
-### Tutorial 2: Navigating the ROS Filesystem (*29-Jan*)
 
-"_Description:_ This tutorial introduces ROS filesystem concepts, and covers using the roscd, rosls, and rospack commandline tools."
 
-#### 1. Prerequisite
+#### 5. package dependencies
 
-<!-- I attempted to install the tutorial packages, but basically was informed that nothing needed to be installed. -->
-I ran the appropriate command to install the tutorial package, but the latest version was noted to already be installed.
 
-#### 2. Quick Overview of Filesystem Concepts
 
-This section defined packages and manifests, as well as explaining that stacks had been removed.
+### Tutorial 4:  (*date*)
 
-#### 3. Filesystem Tools
+"__Description:__ "
 
-This portion was pretty direct with the alterations of commands to find `rospack find [package_name]` or change directories `roscd` straight to a specific ROS package. It is nice to have short cuts like that. It also showed the power of utilising the tab key with under-completed file names, but that is a pretty common trick for anyone that regularly does programming. Although, the double-tap on the tab key for all options was a new one for me.
+#### 1.
 
-The `roscd log` was also an interesting tool, allowing you to see all of the log files that have been stored.
 
-The `rosls [location_name[/subdir]]` seems like it will also be a useful tool in the future. Being able to _remotely_ access the contents of a different folder within the ROS set up would make copying or relocating files much easier.
 
-### Tutorial 3: Creating a ROS Package
+#### 2.
+
+
+
+#### 3.
+
+
+
+<!-- ### Tutorial 3: Creating a ROS Package
 
 Just another tutorial with a lot of explanation and a good walk-through of generating a new ROS package. I have also started working on adopting VIM as my command line file editor, because it seems to have a lot of really good functionality. It can be a little tricky to learn at first - especially if you have never worked with command line file editors before. It has definitely grown on me over the past couple of years though.
 
@@ -185,4 +180,4 @@ Gatsby is built with React at its core and shares a common API pattern, the life
 
 Without the Gatsby lifecycle, it would be impossible to customize and modify your project beyond the base configuration, leaving developers with a rigid and poor developer experience. This power and flexibility has helped us build amazing web projects for clients like Hopper!
 
-Gatsby is a staple within our engineering process at Narative, helping us help our clients build the products they’ve always dreamed of, and the ones they’re yet to dream up.
+Gatsby is a staple within our engineering process at Narative, helping us help our clients build the products they’ve always dreamed of, and the ones they’re yet to dream up. -->
