@@ -1,7 +1,7 @@
 ---
 title: ROS Tutorials 1 & 2
 date: 2021-01-29
-hero: /images/ROStuts1.jpg
+hero: /images/ROStuts1.png
 excerpt: Learning about and how to use ROS is a definite advantage for an aspiring roboticist, so it is pretty surprising that as an engineer graduate with a major in mechatronics and a minor in robotics I have barely been exposed to ROS - and even that was through verbal reference only.
 timeToRead: 8
 authors:
