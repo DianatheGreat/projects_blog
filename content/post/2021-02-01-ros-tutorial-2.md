@@ -14,13 +14,16 @@ I decided that the easiest, and probably most expeditious, way to learn about RO
 
 ## Beginner level (cont.)
 
-### Tutorial 3: Creating a ROS Package (*01-Feb*)
+### Tutorial 3: Creating a ROS Package (*31-Jan*)
 
 "__Description:__ This tutorial covers using roscreate-pkg or catkin to create a new package, and rospack to list package dependencies."
 
 #### 1. What makes up a catkin Package?
 
-
+A catkin package has three basic requirements:
+1. It must contain a catkin compliant package manifest (package.xml).
+2. It must contain an appropriate input text file for the CMake build system (CMakeLists.txt).
+3. It must have its own folder.
 
 #### 2. Packages in a catkin Workspace
 

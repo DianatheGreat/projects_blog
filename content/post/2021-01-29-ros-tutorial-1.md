@@ -29,7 +29,20 @@ This was already accomplished in my previous [blog post](https://www.roboticsbyd
 
 #### 2. Managing Your environment
 
-Typed in the `printenv | grep ROS` command and it spit out all of the ROS details, so no additional sourcing required.
+I typed in the `printenv | grep ROS` command and it spit out all of the ROS details, so no additional sourcing is required.
+
+For those who are not aware, the `printenv` command is asking the terminal to print all of the details of the current environment with one key/value pair per line. Adding the pipe `|` tells it to send that data to the next command, which is `grep`. Greater Regular Expression Printer is used to filter the data to show only what was elected, in this case variables pertaining to text immediately after the command (which can also use regular expression tags and keys). So, this command searched all of the environment variables for those with the name 'ROS' and printed it:
+
+```
+ROS_VERSION = 1
+ROS_PYTHON_VERSION = 3
+ROS_PACKAGE_PATH = /opt/ros/noetic/share
+ROSLISP_PACKAGE_DIRECTORIES =
+ROS_ETC_DIR = /opt/ros/noetic/etc/ros
+ROS_MASTER_URI = http://localhost:xxxxx
+ROS_ROOT = /opt/ros/noetic/share/rosed
+ROS_DISTRO = noetic
+```
 
 #### 3. Create a ROS workspace
 
